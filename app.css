@@ -4,3 +4,10 @@
   font-family: 'Courier New', Courier, monospace;
   font-size: large;
 }
+
+.form{
+
+    border: 1px solid red;
+    padding-top: 10px;
+    
+}
