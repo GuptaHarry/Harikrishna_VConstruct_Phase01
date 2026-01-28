@@ -41,7 +41,7 @@ console.log("Tasks:", tasks);
 
 // add a method to find all pending tasks
 
- Task.prototype.pendingTasks = function(tasks){
+ Task.pendingTasks = function(tasks){
     return tasks.filter(task => task.status === "pending");
  }
 
@@ -56,7 +56,7 @@ Task.prototype.markCompleted = function() {
 
  tasks[1].markCompleted();
 console.log("After marking completed:", tasks);
-const pending = tasks[0].pendingTasks(tasks);
+const pending = tasks.pendingTasks(tasks);
 console.log("Pending tasks:", pending);
 
 
